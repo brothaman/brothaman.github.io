@@ -1,0 +1,162 @@
+/************ Base Styling **************/
+body {
+	margin: 0;
+	padding: 0;
+	/* padding-top: 3.5rem; */
+	background-color: #282728;
+	color: grey;
+	line-height: 1.5;
+}
+
+.container #cv-content-container {
+	background-color: #f8f9fa;
+	color: #343a40;
+	margin-bottom: 2rem;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+	padding-top: 0;
+	padding-bottom: 1rem;
+}
+
+.bg-cream {
+	background-color: #ECEBEB;
+}
+
+.bg-purple {
+	background-color: #460046;
+}
+
+/********************** Navigation Bar *******************/
+.site-header a {
+	color: grey;
+	transition: ease-in-out color .15s;
+}
+/* main > .container {
+	padding-top: 60px;
+} */
+	
+/********** Content Panel *************/
+/* .content {
+	background-color: #ECEBEB;
+	min-height: 400px;
+} */
+
+/* .rounded-10 {
+	border-radius: 10px;
+} */
+
+/*********** Footer Bar **************/
+.footer {
+	background-color: #460046;
+	display: block;
+	margin-right: -100px;
+}
+
+/* .mt-auto {
+	margin-top: auto!important;
+} */
+
+/* .py-3 {
+	padding-bottom: 1rem!important;
+	padding-top: 1rem!important;
+} */
+
+.btn-outline-success {
+	color: #ECEBEB;
+	border-color: #ECEBEB;
+}
+
+.btn-outline-success:hover {
+	color: #282728;
+	background: #ECEBEB;
+	border-color: #460046;
+}
+/************ xl browser style ***********/
+@media (min-width: 1201px){
+	.mxw-xl-100 {
+		max-width: 100%!important;
+	}
+}
+
+/************ lg browser style ***********/
+@media (max-width: 1200px) {
+	.mxw-lg-100 {
+		max-width: 100%!important;
+	}
+	/* .navbar {
+		min-height: 50px;
+	} */
+	/* .div-container {
+		border: none;
+	} */
+	/* .border-left-md {
+		border: left;
+	}
+	.text-right-md {
+		text-align: right;
+	} */
+}
+
+
+
+/******************** Extra Large devices only ***************/
+@media (min-width: 1200px){
+	
+}
+
+/****************** Large devices only ****************/
+@media (min-width: 992px) and (max-width: 1199px) {
+	
+}
+
+/************ Large devices and smaller *************/
+@media (max-width:1199px) {
+	
+}
+
+/******************** Large devices and larger ***************/
+@media (min-width: 992px) {
+	.rounded-lgup-10 {
+		border-radius: 10px;
+	}
+}
+
+
+
+/***************** Medium devices only ******************/
+@media (min-width: 768px) and (max-width: 991px) {
+	
+}
+
+/***************** Medium devices and larger ******************/
+@media (min-width: 768px) {
+	
+}
+/************ Medium devices and smaller *************/
+@media (max-width: 991px) {
+	.mx-w-100 {
+		max-width: 100%!important;
+	}
+	.mxw-md-100 {
+		max-width: 100%!important;
+	}
+	.text-right-md {
+		text-align: left;
+	}
+	.border-left-md {
+		border-left: thin;
+	}
+	.border-bottom-md {
+		border-bottom: thin;
+	}
+}
+
+/*************** small devices and larger **************/
+@media (min-width: 576px){
+	
+}
+
+/***************** small devices and smaller ******************/
+@media (max-width: 767px){
+	
+}

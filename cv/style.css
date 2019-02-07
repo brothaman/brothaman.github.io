@@ -1,0 +1,43 @@
+body {
+	background-color: #ECEBEB;
+}
+
+ul#skills {
+	list-style-type: none;
+}
+
+.container .row #year {
+	text-align: center;
+}
+
+a:link {
+	color: grey;
+}
+
+a:visited {
+	color: grey;
+}
+
+@media (max-width: 991px) {
+	body .container {
+		margin-left: 0;
+		margin-right: 0;
+		max-width: 100%;
+	}
+
+	.jumbotron  {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+}
+
+@media (max-width: 767px) {
+	.container .row #title {
+		text-align: center;
+	}
+		ul#skills{
+		text-align: center;
+		padding: 0;
+		list-style-type: none;
+	}
+}

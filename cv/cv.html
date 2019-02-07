@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Robert Brothers</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- including bootstrap core css -->
+		<link rel="stylesheet" href="../dist/css/bootstrap.min.css">
+
+
+		<!-- custom styles for this site -->
+		<link rel="stylesheet" href="../styles.css">
+
+		<!-- custom styles for this page -->
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		
+		<!-- set up the navigation bar -->
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+
+			<!-- robro brand -->
+			<a class="navbar-brand" href="../index.html">robro</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<!-- menu items -->
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#">About me</a>
+					</li>
+
+					<li class="nav-item active">
+						<a class="nav-link" href="#TopOfPage">CV</a>
+						<span class="sr-only">(current)</span>
+					</li>
+
+					<!-- add java script for dropdown menu -->
+					<li class="nav-item dropdown">
+						
+						<a class="nav-link dropdown-toggle" href="#" id="navbar01" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Education</a>
+
+						<div class="dropdown-menu" aria-labelledby="navbar01">
+
+							<a class="dropdown-item" href="#">Master's of Science in Mechanical Engineering</a>
+							<a class="dropdown-item" href="#">Bachelor's of Science in Mechanical Engineering</a>
+							<a class="dropdown-item" href="#">Bachelor's of Science in Chemistry</a>
+
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbar01" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Experience</a>
+
+						<div class="dropdown-menu" aria-labelledby="navbar01">
+
+							<a class="dropdown-item" href="#">Professional</a>
+
+							<a class="dropdown-item" href="#">Academic</a>
+
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbar01" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
+
+						<div class="dropdown-menu" aria-labelledby="navbar01">
+
+							<a class="dropdown-item" href="#">Completed</a>
+
+							<a class="dropdown-item" href="#">Current</a>
+							<a class="dropdown-item" href="#">On Going</a>
+							<a class="dropdown-item" href="#">Defunct</a>
+
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbar01" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Research</a>
+
+						<div class="dropdown-menu" aria-labelledby="navbar01">
+
+							<a class="dropdown-item" href="#">Academic</a>
+							<a class="dropdown-item" href="#">Other</a>
+
+						</div>
+					</li>
+				</ul>
+
+				<!-- contact button -->
+				<button class="btn btn-outline-success btn-bg my-2" type="submit">Contact me</button>
+			</div>
+		</nav>
+
+		<!-- set up banner after the navigation bar for introduction -->
+		<div class="jumbotron mb-0 rounded-0 mt-5" id="TopOfPage">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-md-4 order-md-2 text-center text-md-right">
+						<img src="../media/IMG_1031.jpg" class="img-thumbnail float-md-right " style="height: auto; width: 200px;">
+					</div>
+					<div class="col-md-8 order-md-1">
+						<h1 class="display-3 text-dark text-left">Hello,</h1>
+						<p class="text-dark text-left">I am a passionate problem solver with strengths in computer programming, numerical design, and organic chemistry looking for a challenging entry to mid level engineering position.</p>
+						<p class="text-dark text-left">In this role, I would work along side a team of diversely skilled engineering professionals in an environment conducive to growth and productivity. Also, I would build on existing skills in design and programming in addition to learning new ones.</p>
+						<p class="text-left text-dark">
+							Please contact me if you think i'd be a good fit for your team. Or, if you know a team that could benefit from an engineer with my skillset refer them to this page.
+						</p>
+					</div> <!-- Column -->
+				</div> <!-- Row -->
+			</div> <!-- Container -->
+		</div> <!-- Jumbotron -->
+
+		<!-- container holding information of CV -->
+		<div class="container px-0">
+
+			<!-- Education -->
+			<div class="container">
+				<h1>Education</h1>
+			</div>
+			<div class="container shadow rounded-lgup-10" id="cv-content-container">
+				<div class="row border-bottom pt-3">
+					<div class="col-md-8">
+						<h2 id="title">Master's of Science in Mechanical Engineering</h2>
+					</div>
+					<div class="col-md-4  text-right-md">
+						<h2 id="year">December 2018</h2>
+					</div>
+					<div class="col-md-9">
+						<p>Mentor/Advisor to the Advanced Robotics student group</p>
+						<p>Thesis: "Dynamic Programming of a Torso Actuated Rimless Wheel Robot"</p>
+						<ul>
+							<li>Achieved globally optimal speed transitions for the variable speed walking of a planar rimless wheel robot</li>
+							<li>Developed a parallel and scalable Dynamic Programming MATLAB program to perform nonlinear optimization</li>
+						</ul>
+					</div>
+				</div> <!-- row -->
+
+				<div class="row border-bottom pt-3">
+					<div class="col-md-8">
+						<h2 id="title">Bachelor's of Science in Mechanical Engineering</h2>
+					</div>
+					<div class="col-md-4  text-right-md">
+						<h2 id="year">August&nbsp;2015</h2>
+					</div>
+					<div class="col-md-9">
+						<p>Capstone: "Ein the Modular Robotic Leg"</p>
+						<ul>
+							<li>Designed a 2 degree of freedom mechanism to capture the basic dynamic characteristics of a leg</li>
+							<li>Implemented numerical analysis techniques to build a path planning programming that minimized changes in velocity to guide an end&nbsp;effector between any number of states</li>
+						</ul>
+					</div>
+				</div> <!-- row -->
+
+				<div class="row pt-3">
+					<div class="col-md-8">
+						<h2 id="title">Bachelor's of Science in Chemistry</h2>
+					</div>
+					<div class="col-md-4 text-right-md">
+						<h2 id="year">August&nbsp;2015</h2>
+					</div>
+					<div class="col-md-9">
+						<p>Independent Study of Computational Chemistry</p>
+						<ul>
+							<li>converted an existing vibro-rotational software from Fortran95 to C</li>
+							<li>Certification in Green Chemistry</li>
+						</ul>
+					</div>
+				</div> <!-- row -->
+
+			</div> <!-- container -->
+
+			<!-- work experience -->
+			<div class="container">
+				<h1>Experience</h1>
+			</div>
+			<div class="container shadow rounded-lgup-10" id="cv-content-container">
+				<div class="row border-bottom py-3">
+					<div class="col-md-8">
+						<h2 id="title">Graduate Teaching Assistant - UTSA</h2>
+					</div>
+					<div class="col-md-4 text-right-md">
+						<h2 id="year">Fall Semester of 2016</h2>
+					</div>
+					<div class="col-md-8">
+						<p>Introduced students to functional/modular programming applying the latest numerical analysis, design, and visualization techniques in MATLAB.</p>
+						<ul>
+							<li>Organized lesson plans and conducted lectures communicating complex numerical concepts emphasizing modular program design</li>
+							<li>Wrote auto grading scripts in MATLAB to reduce the total grading time from 8&nbsp;hrs&nbsp;to&nbsp;≈&nbsp;1.5&nbsp;hrs</li>
+							<li>Encouraged 7 of 42 students to successfully engage in undergraduate research applying the techniques learned in lecture</li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<p class="text-center font-weight-bold border-bottom-md">Applied Skills</p>
+						<ul id="skills">
+							<li>Technical Writing</li>
+							<li>Public Presentation</li>
+							<li>Data Visualization</li>
+						</ul>
+					</div>
+				</div> <!-- row -->
+
+				<div class="row border-bottom pt-3">
+					<div class="col-md-8">
+						<h2 id="title">Sales/Technical Specialist - Apple</h2>
+					</div>
+					<div class="col-md-4 text-right-md">
+						<h2 id="year">September 2016 - Current</h2>
+					</div>
+					<div class="col-md-8">
+						<p>Apply strong communication skills in combination with industry leading service techniques to quickly build connections with customers, identify technical issues, and find solutions that best meet their needs and resolve their issues.</p>
+						<ul>
+							<li>Above average customer satisfaciton metrics</li>
+							<li>Displayed excellent teamwork</li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<p class="text-center font-weight-bold">Applied Skills</p>
+						<ul id="skills">
+							<li>Concise verbal communication</li>
+							<li>Solution Oriented Discussion</li>
+						</ul>
+					</div>
+				</div> <!-- row -->
+
+				<!-- undergraduate research assistant -->
+				<div class="row pt-3">
+					<div class="col-md-8">
+						<h2 id="title">Undergraduate Research Assistant - UTSA</h2>
+					</div>
+					<div class="col-md-4 text-right-md">
+						<h2 id="year">Spring 2013 - Fall 2014</h2>
+					</div>
+					<div class="col-md-8">
+						<p>Evaluated the data input process for a material modeling program and developed a parser that simplified organization and reduced the average character count by 50%. </p>
+						<ul>
+							<li>Used GitHub to contribute to Sandia National Lab’s private repo for Peridigm a closed-source peridynamic crack modeling program.</li>
+							<li>Learned and applied data organization techniques: Linked list, bit operations, storage optimization, etc.</li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<p class="text-center font-weight-bold">Applied Skills</p>
+						<ul id="skills">
+							<li>C/C++</li>
+							<li>Data Type</li>
+							<li>Teamwork</li>
+							<li>MacOS&nbsp;Terminal & Ubuntu Work&nbsp;Arounds</li>
+						</ul>
+					</div>
+				</div> <!-- row -->
+
+			</div> <!-- container -->
+
+			<!-- projects -->
+			<div class="container">
+				<h1>Projects</h1>
+			</div>
+			<div class="container shadow rounded-lgup-10" id="cv-content-container">
+				<div class="row border-bottom pt-3">
+					<div class="col-md-8">
+						<h2 id="title">Autonomous Car</h2>
+					</div>
+					<div class="col-md-4 text-right-md">
+						<h2 id="year">Summer 2014</h2>
+					</div>
+					<div class="col-md-8">
+						<p>Designed and programmed an autonomous car to perform 3 task: navigate unaided through a maze, avoid collision while in motion, and “cat and mouse”.</p>
+						<ul>
+							<li>Designed RC bandpass circuit to filter noisy sensor signal of cheap rotary encoder</li>
+							<li>Used Simulink to model and simulate motor’s dynamic response to voltage input</li>
+							<li>Used a cascaded PID approach to chase “mouse”:</li>
+							<ul>
+								<li>center object in view of image sensor</li>
+								<li>turn rate</li>
+								<li>wheel speed</li>
+							</ul>
+							<li>Used programming techniques like data packing and "passing by reference" to reduce memore and cycle time</li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<p class="text-center font-weight-bold border-bottom-md">Applied Skills</p>
+						<ul id="skills">
+							<li>Project Management</li>
+							<li>Data Packing</li>
+							<li>Arduino</li>
+							<li>Modular Programming</li>
+						</ul>
+					</div>
+				</div> <!-- row -->
+
+				<div class="row border-bottom pt-3">
+					<div class="col-md-8">
+						<h2 id="title">STEM Community Outreach</h2>
+					</div>
+					<div class="col-md-4 text-right-md">
+						<h2 id="year">Summer 2016</h2>
+					</div>
+					<div class="col-md-8">
+						<p>Organized a fun and engaging event for local high school students to build and program an LED array circuit that produced optical illusions. This 1.5 hr session was intended to quickly introduce them to various physical science concepts including circuitry, programming, and biological phenomena.</p>
+						<ul>
+							<li>Used Fritzing and MultiSIM to design a PCB</li>
+							<li>Chose low cost/free software and hardware with supportive communities to encourage growth</li>
+							<li>Negotiated with BENCOR LLC to produce PCBs in exchange to advertisement.</li>
+							<li>Built modular C-based library that defined functions for drawing letters using arc-pixels</li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<p class="text-center font-weight-bold">Applied Skills</p>
+						<ul id="skills">
+							<li>Public Presentation</li>
+							<li>Education</li>
+							<li>Circuit Design</li>
+							<li>Project Management</li>
+						</ul>
+					</div>
+				</div> <!-- row -->
+
+				<!-- undergraduate research assistant -->
+				<div class="row pt-3">
+					<div class="col-md-8">
+						<h2 id="title">Analysis and Control of Ball Balancing Beam</h2>
+					</div>
+					<div class="col-md-4 text-right-md">
+						<h2 id="year">Spring 2016</h2>
+					</div>
+					<div class="col-md-8">
+						<p>Developed PID, state feedback, and LQR compensators for a ball on beam mechanism.</p>
+						<ul>
+							<li>Derived Linearized SIMO model from mechanism</li>
+							<li>ussed pole placement to set PD and PID gains considering response characteristics</li>
+							<li>Simulated PID and PD controlled systems in Simulink</li>
+							<li>Designed LQR to optimize time and energy usage of system response</li>
+							<li>Designed state feedback controller</li>
+							<li>Compared performance of PID, state feedback, and LQR responses</li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<p class="text-center font-weight-bold">Applied Skills</p>
+						<ul id="skills">
+							<li>Control System Design</li>
+							<li>Simulink</li>
+						</ul>
+					</div>
+				</div> <!-- row -->
+
+			</div> <!-- container -->
+
+			<!-- skills  -->
+			<div class="container">
+				<h1>Projects</h1>
+			</div>
+			<div class="container shadow rounded-lgup-10" id="cv-content-container">
+				<div class="row border-bottom pt-3">
+					<div class="col-md-3">
+						<h4 class="text-center text-md-left">Programming</h4>
+						<ul id="skills">
+							<li>MATLAB</li>
+							<li>Python</li>
+							<li>C/C++</li>
+							<li>.git</li>
+							<li>Linux Terminal</li>
+							<li>Parallel Compution</li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<h4 class="text-center text-md-left">Engineering Software</h4>
+						<ul id="skills">
+							<li>Solidworks</li>
+							<li>Simulink</li>
+							<li>OnShape</li>
+							<li>Blender</li>
+							<li>Fusion360</li>
+							<li>MultiSIM</li>
+						</ul>
+					</div>
+					<div class="col-md-6">
+						<h4 class="text-center text-md-left">Soft Skills</h4>
+						<ul>
+							<li>Strong technical writting and verbal skills: experience communicat technical decisions based on data to a diverse audience.</li>
+							<li>Public presentation: able to capture a room and effectively communicate complex ideas</li>
+							<li>Teamwork: able to apply diverse background to create connections between ideas and concepts </li>
+							<li>Project management: experience leading multidisciplinary team: organized projects into milestones, task were delegated according to each team member’s specializations and passions, and deadlines were met with time enough for debriefing. Lead by example</li>
+						</ul>
+					</div>
+				</div> <!-- row -->
+
+			</div> <!-- container -->
+		</div>
+
+		<!-- set up the footer -->
+		<footer class="footer mt-auto py-3 bg-dark" style="max-width: 100%">
+			<div class="container">
+				<div class="row reverse">
+					<div class="col-3">
+						<a href="#TopOfPage">Back to Top</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- scripts not yet secure -->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script>window.jQuery || document.write('<script src="../jquery/dist/jquery.min.js"><\/script>')</script>
+		<script src="../dist/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
+

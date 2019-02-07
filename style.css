@@ -1,0 +1,85 @@
+
+/************* large device or larger **********/
+/* @media (min-width: 1322px) {
+	.carousel .carousel-item img {
+		margin-right: auto;
+		margin-left: auto;
+		max-width: 75%;
+	}
+} */
+#spotlight {
+	background: #000000;
+}
+/************* large device and smaller ********/
+@media (max-width: 1199px) {
+	main .container {
+		margin-right: auto;
+		margin-left: auto;
+		max-width: 100%
+	}
+}
+
+/******************* large device ******************/
+@media (min-width: 1200px) and (max-width: 1399px) {
+	.carousel .carousel-item img {
+		margin-right: auto;
+		margin-left: auto;
+		max-width: 1200px;
+	}
+
+	main .container {
+		margin-right: auto;
+		margin-left: auto;
+		max-width: 1200px
+	}
+}
+
+/************* xl large device or larger **********/
+@media (min-width: 1400px) {
+	.carousel .carousel-item img {
+		margin-right: auto;
+		margin-left: auto;
+		max-width: 1400px;
+	}
+
+	main .container {
+		margin-right: auto;
+		margin-left: auto;
+		max-width: 1400px
+	}
+}
+
+/************* medium device or larger **********/
+@media (min-width: 768px){
+
+	.carousel .carousel-item .carousel-caption {
+		background-color: rgba(1, 1, 1, 0.8);
+		border-radius: 10px;
+		padding: 1rem;
+	}
+
+	.carousel .carousel-item img {
+		margin-top: 60px;
+	}
+}
+
+/*************** small devices and smaller ********/
+@media (max-width: 767px) {
+
+	.carousel .carousel-item .carousel-caption {
+		margin: 0;
+		background-color: rgba(1, 1, 1, 0.8);
+		border-radius: 10px;
+		padding: 1rem;
+	}
+
+	.carousel .carousel-item img {
+		margin-top: 56px;
+	}
+
+	main .container .row {
+		padding: 1rem;
+		margin: 0;
+		max-width: 100%;
+	}
+}
