@@ -1,0 +1,11 @@
+:root {
+	--main-bg-color: #282728;
+}
+
+body {
+	background-color: var(--main-bg-color);
+}
+
+.bg-purple {
+	background-color: #460046;
+}
