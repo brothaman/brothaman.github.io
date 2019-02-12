@@ -74,7 +74,7 @@
 					</li>
 
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbar01" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
+						<a class="nav-link dropdown-toggle active" href="#" id="navbar01" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
 
 						<div class="dropdown-menu" aria-labelledby="navbar01">
 
@@ -105,41 +105,38 @@
 		</nav> <!-- top navbar -->
 
 		<!-- set up the main content -->
-		<div class="container-fluid bg-cream">
+		<div class="container-fluid" id="main-content">
 			<div class="row">
-				<nav class="col-lg-2 col-md-3 d-none d-md-block bg-purple sidebar">
+				
+				<!-- set up the sidebar -->
+				<nav class="col-lg-2 col-md-3 sidebar bg-purple" id="sidebar">
+					<div class="sidebar-header">
+						<h3>Project Title</h3>
+					</div>
 
+					<a href="#" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Home</a>
+					<ul class="collapse" id="homeSubmenu">
+						<li>
+							<a href="#">Home 1</a>
+						</li>
+						<li>
+							<a href="#">Home 1</a>
+						</li>
+						<li>
+							<a href="#">Home 1</a>
+						</li>
+					</ul>
 				</nav>
 
-				<main role="main" class="col-lg-10 col-md-9"
+				<main role="main" class="col-lg-10 col-md-9 bg-cream">
+					<h1>hello world</h1>
+				</main>
 			</div>
 		</div>
-		<!-- set up the sidebar with page map -->
-		<nav id="sidebar" class="bg-purple text-light">
-			<div class="sidebar-header">
-				<h1>Project Title</h1>
-			</div>
-			<ul class="list-unstyled components">
-				<li>
-					<a href="Description">project description</a>
-				</li>
 
-				<li>
-					<a href="Description">project description</a>
-				</li>
-
-				<li>
-					<a href="Description">project description</a>
-				</li>
-
-				<li>
-					<a href="Description">project description</a>
-				</li>
-			</ul>
-		</nav>
-
-		<div id="content">
-
-		</div>
+		<!-- scripts not yet secure -->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script>window.jQuery || document.write('<script src="../../jquery/dist/jquery.min.js"><\/script>')</script>
+		<script src="../../dist/js/bootstrap.bundle.min.js"></script>
 	</body>
 </html>

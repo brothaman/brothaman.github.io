@@ -9,3 +9,22 @@ body {
 .bg-purple {
 	background-color: #460046;
 }
+
+div#main-content {
+	margin-top: 63px;
+}
+
+nav#sidebar {
+	padding-top: 15px;
+	padding-bottom: 30px;
+}
+
+nav#sidebar h3#project-title {
+	color: azure;
+}
+
+#nav-item:hover {
+
+}
+
+/* sidebar specific stylization */
