@@ -15,6 +15,8 @@
 		<!-- including bootstrap core css -->
 		<link rel="stylesheet" href="../../dist/css/bootstrap.min.css">
 
+		<!-- sidebar css for project -->
+		<link rel="stylesheet" href="../../sidebar.css">
 
 		<!-- custom styles for website -->
 		<link rel="stylesheet" href="../../styles.css">
@@ -28,7 +30,7 @@
 	
 	<body>
 		<!-- set up the navigation bar -->
-		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" role="navigation">
 
 			<!-- robro brand -->
 			<a class="navbar-brand" href="#">robro</a>
@@ -106,10 +108,10 @@
 
 		<!-- set up the main content -->
 		<div class="container-fluid" id="main-content">
-			<div class="row">
+			<div class="row bg-light">
 				
 				<!-- left sidebar with project sitemap -->
-				<nav class="col-md-3 col-lg-2 d-none d-md-block sidebar bg-light">
+				<nav class="col-md-3 col-lg-2 d-none d-md-block sidebar" role="navigation">
 					<div class="sidebar-sticky">
 						<ul class="nav flex-column">
 							<li class="nav-item active">
@@ -128,15 +130,8 @@
 					</div>
 				</nav>
 				
-				<main role="main" class="col-lg-8 col-md-9 bg-light ml-sm-auto">
-					<div class="container-fluid bg-light" style="position: absolute; left: 0; top: 0; right: 0;">
-							<h1>hello world</h1>
-							<a href="#">Top of Page</a>
-					</div>
-				</main>
-
 				<!-- right sidebar for page map -->
-				<div class="d-none d-xl-block col-xl-2 bg-light border-left">
+				<div class="d-none d-xl-block col-xl-2 border-left page-map" role="navigation">
 					<ul class="page-map">
 						<li class="project-chapter">
 							<a href="#Intro">Introduction</a>
@@ -171,6 +166,14 @@
 						</li>
 					</ul>
 				</div>
+
+				<!-- main content of the page -->
+				<main class="col-lg-8 col-md-9 ml-sm-auto content" role="main">
+					<div class="container-fluid bg-light" style="position: absolute; left: 0; top: 0; right: 0;">
+							<h1>hello world</h1>
+							<a href="#">Top of Page</a>
+					</div>
+				</main>
 			</div>
 		</div> <!-- div main content container fluid-->
 

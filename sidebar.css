@@ -1,0 +1,28 @@
+/* site map sidebar */
+.sidebar {
+    order: 0;
+    position: stick;
+    top: 1rem;
+    height: calc(100-1rem);
+	border-right: 1px solid rgba(0,0,0,.1);
+}
+.sidebar a {
+    color: rgba(0,0,0,.6);
+}
+
+/* page map or project table of contents */
+.page-map {
+    order: 2;
+}
+.page-map ul {
+    text-decoration: none;
+    list-style: none;
+}
+.page-map ul li {
+    margin: 0.8em 0;
+    padding-left: 10px;
+}
+.page-map a {
+    color: rgba(0,0,0,.6);
+    /* text-shadow: 1px 1px rgba(0,0,0,.1); */
+}
