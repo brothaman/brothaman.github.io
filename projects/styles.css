@@ -10,6 +10,39 @@ body {
 	background-color: #460046;
 }
 
+.sidebar {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 100; /* Behind the navbar */
+	padding: 62px 0 0; /* Height of navbar */
+	box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+.sidebar-sticky {
+	position: relative;
+	top: 0;
+	height: calc(100vh - 48px);
+	padding-top: .5rem;
+	overflow-x: hidden;
+	overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+li.project-chapter a{
+	text-decoration: none;
+}
+
+ul.page-map ul {
+	list-style: none;
+	padding-left: 10px;
+	font-size: .8em;
+}
+
+ul.page-map {
+	list-style: none;
+	padding-left: 0;
+}
 div#main-content {
 	margin-top: 63px;
 }

@@ -108,31 +108,71 @@
 		<div class="container-fluid" id="main-content">
 			<div class="row">
 				
-				<!-- set up the sidebar -->
-				<nav class="col-lg-2 col-md-3 sidebar bg-purple" id="sidebar">
-					<div class="sidebar-header">
-						<h3>Project Title</h3>
+				<!-- left sidebar with project sitemap -->
+				<nav class="col-md-3 col-lg-2 d-none d-md-block sidebar bg-light">
+					<div class="sidebar-sticky">
+						<ul class="nav flex-column">
+							<li class="nav-item active">
+								<a class="nav-link active" href="#"><h3>Robotics Projects</h3></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" href="#">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" href="#">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" href="#">Home</a>
+							</li>
+						</ul>
 					</div>
+				</nav>
+				
+				<main role="main" class="col-lg-8 col-md-9 bg-light ml-sm-auto">
+					<div class="container-fluid bg-light" style="position: absolute; left: 0; top: 0; right: 0;">
+							<h1>hello world</h1>
+							<a href="#">Top of Page</a>
+					</div>
+				</main>
 
-					<a href="#" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Home</a>
-					<ul class="collapse" id="homeSubmenu">
-						<li>
-							<a href="#">Home 1</a>
+				<!-- right sidebar for page map -->
+				<div class="d-none d-xl-block col-xl-2 bg-light border-left">
+					<ul class="page-map">
+						<li class="project-chapter">
+							<a href="#Intro">Introduction</a>
 						</li>
-						<li>
-							<a href="#">Home 1</a>
+						<ul>
+							<li class="project-chapter-section"><a href="#">Introduction to Dynamic Programming</a></li>
+							<li class="project-chapter-section"><a href="#">Example: Man Biking to Work</a></li>
+							<li class="project-chapter-section"><a href="#">The Rowdy Runner</a></li>
+						</ul>
+						<li class="project-chapter">
+							<a href="#Approach">Approach</a>
 						</li>
-						<li>
-							<a href="#">Home 1</a>
+						<ul>
+							<li class="project-chapter-section"><a href="#">Generating the Cost Network</a></li>
+							<li class="project-chapter-section"><a href="#">Generating the Connection Network</a></li>
+							<li class="project-chapter-section"><a href="#">Evaluating the Cost and Connection Network</a></li>
+						</ul>
+						<li class="project-chapter">
+							<a href="#Application">Application</a>
+						</li>
+						<li class="project-chapter">
+							<a href="#Results">Results</a>
+						</li>
+						<li class="project-chapter">
+							<a href="#Discussion">Discussion of Results</a>
+						</li>
+						<li class="project-chapter">
+							<a href="#Conclusion">Conclusion</a>
+						</li>
+						<li class="project-chapter">
+							<a href="#Nextsteps">Next Steps</a>
 						</li>
 					</ul>
-				</nav>
-
-				<main role="main" class="col-lg-10 col-md-9 bg-cream">
-					<h1>hello world</h1>
-				</main>
+				</div>
 			</div>
-		</div>
+		</div> <!-- div main content container fluid-->
 
 		<!-- scripts not yet secure -->
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
