@@ -18,16 +18,15 @@ ul.page-map ul li{
 	margin: .5em 0;
 }
 
-ul.page-map ul {
+/* ul.page-map ul {
 	list-style: none;
 	padding-left: 10px;
 	font-size: .8em;
-}
-
-ul.page-map {
+} */
+/* ul.page-map {
 	list-style: none;
 	padding-left: 0;
-}
+} */
 div#main-content {
 	margin-top: 63px;
 }

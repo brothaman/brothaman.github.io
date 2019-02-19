@@ -1,28 +1,58 @@
 /* site map sidebar */
 .sidebar {
     order: 0;
-    position: stick;
-    top: 1rem;
-    height: calc(100-1rem);
-	border-right: 1px solid rgba(0,0,0,.1);
+    position: fixed;
+    top: 4rem;
+    height: calc(100vh - 4rem); 
+    bottom: 0;
+    padding-top: 1.5rem;
 }
 .sidebar a {
     color: rgba(0,0,0,.6);
 }
+.sidebar-sticky {
+    position: sticky;
+    border-right: 1px solid rgba(0,0,0,.1);
+    overflow-y: auto;
+}
 
 /* page map or project table of contents */
 .page-map {
+    -webkit-box-ordinal-group: 3;
+    position: sticky;
+    position: -webkit-sticky;
     order: 2;
+    top: 4rem;
+    height: calc(100vh - 4rem);
+    overflow-y: auto;
+    padding-top: 1.5rem;
 }
-.page-map ul {
+.page-map ul, .page-map li {
     text-decoration: none;
     list-style: none;
 }
-.page-map ul li {
-    margin: 0.8em 0;
-    padding-left: 10px;
+div.page-map > ul {
+    padding-left: 1.5rem;
+    border-left: 1px solid rgba(0,0,0,.1);
+}
+div.page-map > ul > li {
+    padding-bottom: .1275rem;
+    font-size: 1.2em;
+}
+div.page-map > ul > li > ul > li{
+    font-size: 1em;
+}
+.page-map > li {
+    /* margin: 0.8em 0; */
+    margin-top: 1.5em;
 }
 .page-map a {
     color: rgba(0,0,0,.6);
     /* text-shadow: 1px 1px rgba(0,0,0,.1); */
+}
+div.page-map > ul > ul{
+    list-style: none;
+	padding-left: 0.8rem;
+    font-size: 0.875em;
+    padding-bottom: 1.2rem;
 }
