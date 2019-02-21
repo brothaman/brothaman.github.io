@@ -46,7 +46,7 @@
 						</li>
 
 					<li class="nav-item">
-						<a class="nav-link" href="cv/cv.html">CV</a>
+						<a class="nav-link" href="../../cv/cv.html">CV</a>
 					</li>
 
 					<!-- add java script for dropdown menu -->
@@ -108,104 +108,92 @@
 
 		<!-- set up the main content -->
 		<div class="container-fluid" id="main-content">
-			<div class="row">
-				
-				<!-- left sidebar with project sitemap -->
-				<nav class="col-md-3 col-lg-2 d-none d-md-block sidebar bg-light" role="navigation">
-					<div class="sidebar-sticky">
-						<ul class="nav flex-column">
-							<li class="nav-item active">
-								<a class="nav-link active" href="#"><h3>Robotics Projects</h3></a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link active" href="#">Home</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link active" href="#">Home</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link active" href="#">Home</a>
-							</li>
-						</ul>
-					</div>
-				</nav>
-				
-				<!-- right sidebar for page map -->
-				<div class="d-none d-xl-block col-xl-2 page-map bg-light" role="navigation">
-					<ul>
-						<li class="project-chapter">
-							<a href="#Intro">Introduction</a>
+			<!-- left sidebar with project sitemap -->
+			<nav class="col-md-3 col-lg-2 d-none d-md-block sidebar bg-light" role="navigation">
+				<div class="sidebar-sticky">
+					<ul class="nav flex-column">
+						<li class="nav-item active">
+							<a class="nav-link active" href="#"><h3>Robotics Projects</h3></a>
 						</li>
-						<ul>
-							<li class="project-chapter-section"><a href="#">Introduction to Dynamic Programming</a></li>
-							<li class="project-chapter-section"><a href="#">Example: Man Biking to Work</a></li>
-							<li class="project-chapter-section"><a href="#">The Rowdy Runner</a></li>
-						</ul>
-						<li class="project-chapter">
-							<a href="#Approach">Approach</a>
+						<li class="nav-item">
+							<a class="nav-link active" href="#">Home</a>
 						</li>
-						<ul>
-							<li class="project-chapter-section"><a href="#">Generating the Cost Network</a></li>
-							<li class="project-chapter-section"><a href="#">Generating the Connection Network</a></li>
-							<li class="project-chapter-section"><a href="#">Evaluating the Cost and Connection Network</a></li>
-						</ul>
-						<li class="project-chapter">
-							<a href="#Application">Application</a>
+						<li class="nav-item">
+							<a class="nav-link active" href="#">Home</a>
 						</li>
-						<ul>
-							<li class="project-chapter-section"><a href="#">Pendulum Upswing</a></li>
-							<li class="project-chapter-section"><a href="#">Rowdy: the Rimless Wheel Robot</a></li>
-						</ul>
-						<li class="project-chapter">
-							<a href="#Results">Results</a>
-						</li>
-						<ul>
-							<li class="project-chapter-section"><a href="#">Pendulum Upswing</a></li>
-							<li class="project-chapter-section"><a href="#">Rowdy: the Rimless Wheel Robot</a></li>
-						</ul>
-						<li class="project-chapter">
-							<a href="#Nextsteps">Next Steps</a>
-						</li>
-						<ul>
-							<li class="project-chapter-section"><a href="#">Reducing the Computational Time</a></li>
-							<li class="project-chapter-section"><a href="#">Altering the Rate of Decent</a></li>
-							<li class="project-chapter-section"><a href="#">Application to Real Systems</a></li>
-						</ul>
-						<li class="project-chapter">
-							<a href="#Conclusion">Conclusion</a>
+						<li class="nav-item">
+							<a class="nav-link active" href="#">Home</a>
 						</li>
 					</ul>
 				</div>
+			</nav>
 
-				<!-- main content of the page -->
-				<main class="col-lg-8 col-md-9 ml-sm-auto content" role="main">
-					<div class="container-fluid bg-light" style="position: absolute; left: 0; top: 0; right: 0;">
-							<h1>hello world</h1>
-							<h1>hello world</h1>
-							<h1>hello world</h1>
-							<h1>hello world</h1>
-							<h1>hello world</h1>
-							<h1>hello world</h1>
-							<h1>hello world</h1>
-							<h1>hello world</h1>
-							<h1>hello world</h1>
-							<h1>hello world</h1>
-							<h1>hello world</h1>
-							<h1>hello world</h1>
-							<h1>hello world</h1>
-							<h1>hello world</h1>
-							<h1>hello world</h1>
-							<h1>hello world</h1>
-							<h1>hello world</h1>
-							<h1>hello world</h1>
-							<h1>hello world</h1>
-							<h1>hello world</h1>
-							<h1>hello world</h1>
-							<a href="#">Top of Page</a>
-					</div>
-				</main>
-			</div>
+			<!-- main content of the page -->
+			<main class="col-xl-8 col-lg-10 col-md-9 ml-sm-auto content" role="main">
+				<div class="container-fluid bg-light" >
+					<img src="../../media/gifs/animatedimage.gif"/>
+					<h1>The Dynamic Programming of a Rimless Wheel Robot</h1>
+					<h2 class="subject-title" id="abstract">Abstract</h2>
+					<p class="abstract">
+						<i>The rimless wheel is a dynamic walking template that consists of a wheel whose rim has been removed (a discrete wheel).By swinging the torso forward beyond the contact point of the leading foot with respect to the gravity vector, the robot is able to move forward.  We use Dynamic Programming for optimizing the energy usage when achieving the speed transition.  One issue, however, is that the accuracy of the Dynamic Programming solution depends on the fineness of the grid.  This is particularly problematic for systems with high degrees of freedom, where a fine state-space discretization will lead to exponential growth of the required computation and storage. To circumvent this issue, we use a step-to-step map, also known as the Poincaré map to discretize the system.   The Poincaré map relates the velocity of the rimless wheel robot at the mid-stance (the current state) and the fixed torso angle per step (the control variable) to the velocity at mid-stance of the next step (the new state).Using this map, we set up a Dynamic Programming problem to minimize a weighted sum of the normalized and squared deviation from the desired speed and the normalized square of the actuator effort. The problem is then solved using a combination of value- and policy- iteration for computational efficiency. We demonstrate that it is possible to switch from a mid-stance speed of 2 rad/s to 3rad/s in 6 steps. Our results suggest that Poincaré map based Dynamic Programming is a computationally efficient paradigm for solving high dimensional problems in legged locomotion.</i>
+					</p>
+					<h2 class="subject-title" id="Intro">Introduction</h2>
+					<h3><i>What is Dynamic Programming?</i></h3>
+
+					<a href="#">Top of Page</a>
+				</div>
+			</main>
 		</div> <!-- div main content container fluid-->
+			
+		<!-- right sidebar for page map -->
+		<div class="d-none d-xl-block col-xl-2 page-map bg-light" role="navigation">
+			<ul>
+				<li class="project-chapter">
+					<a href="#abstract">Abstract</a>
+				</li>
+				<li class="project-chapter">
+					<a href="#Intro">Introduction</a>
+				</li>
+				<ul>
+					<li class="project-chapter-section"><a href="#">Introduction to Dynamic Programming</a></li>
+					<li class="project-chapter-section"><a href="#">Example: Man Biking to Work</a></li>
+					<li class="project-chapter-section"><a href="#">The Rowdy Runner</a></li>
+				</ul>
+				<li class="project-chapter">
+					<a href="#Approach">Approach</a>
+				</li>
+				<ul>
+					<li class="project-chapter-section"><a href="#">Generating the Cost Network</a></li>
+					<li class="project-chapter-section"><a href="#">Generating the Connection Network</a></li>
+					<li class="project-chapter-section"><a href="#">Evaluating the Cost and Connection Network</a></li>
+				</ul>
+				<li class="project-chapter">
+					<a href="#Application">Application</a>
+				</li>
+				<ul>
+					<li class="project-chapter-section"><a href="#">Pendulum Upswing</a></li>
+					<li class="project-chapter-section"><a href="#">Rowdy: the Rimless Wheel Robot</a></li>
+				</ul>
+				<li class="project-chapter">
+					<a href="#Results">Results</a>
+				</li>
+				<ul>
+					<li class="project-chapter-section"><a href="#">Pendulum Upswing</a></li>
+					<li class="project-chapter-section"><a href="#">Rowdy: the Rimless Wheel Robot</a></li>
+				</ul>
+				<li class="project-chapter">
+					<a href="#Nextsteps">Next Steps</a>
+				</li>
+				<ul>
+					<li class="project-chapter-section"><a href="#">Reducing the Computational Time</a></li>
+					<li class="project-chapter-section"><a href="#">Altering the Rate of Decent</a></li>
+					<li class="project-chapter-section"><a href="#">Application to Real Systems</a></li>
+				</ul>
+				<li class="project-chapter">
+					<a href="#Conclusion">Conclusion</a>
+				</li>
+			</ul>
+		</div>
 
 		<!-- scripts not yet secure -->
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>

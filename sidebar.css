@@ -1,31 +1,35 @@
 /* site map sidebar */
 .sidebar {
+    -webkit-box-flex: 0;
+    flex: 0 1 320px;
     order: 0;
     position: fixed;
     top: 4rem;
     height: calc(100vh - 4rem); 
     bottom: 0;
     padding-top: 1.5rem;
+    overflow-y: auto;
+    left: 0;
 }
 .sidebar a {
     color: rgba(0,0,0,.6);
 }
 .sidebar-sticky {
-    position: sticky;
     border-right: 1px solid rgba(0,0,0,.1);
-    overflow-y: auto;
 }
 
 /* page map or project table of contents */
 .page-map {
     -webkit-box-ordinal-group: 3;
-    position: sticky;
-    position: -webkit-sticky;
-    order: 2;
+    position: fixed;
+    position: -webkit-fixed;
     top: 4rem;
+    order: 2;
     height: calc(100vh - 4rem);
     overflow-y: auto;
     padding-top: 1.5rem;
+    left: auto;
+    right: 0;
 }
 .page-map ul, .page-map li {
     text-decoration: none;
@@ -55,4 +59,49 @@ div.page-map > ul > ul{
 	padding-left: 0.8rem;
     font-size: 0.875em;
     padding-bottom: 1.2rem;
+}
+
+/* main content pane */
+main.content {
+    margin-left: auto;
+    margin-right: auto;
+    top: 4rem;
+    padding-top: 1.5rem;
+}
+main.content img {
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+main.content h1 {
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+    font-weight: bold;
+}
+main.content h2 {
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+main.content h3 {
+    padding-left: 3rem;
+    padding-bottom: 1rem;
+}
+main.content p {
+    padding-left: 1rem;
+}
+main.content p {
+    text-indent: 20px;
+}
+main.content p.abstract {
+    padding-left: 80px;
+    padding-right:120px;
+    padding-bottom: 80px;
+}
+
+/* for large devices */
+@media (min-width: 767px) and (max-width: 1199px) {
+    main.content {
+        margin-right: 0;
+        right: 0;
+    }
 }

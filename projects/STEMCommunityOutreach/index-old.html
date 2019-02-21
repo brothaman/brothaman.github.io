@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<!-- meta values -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- page title -->
+		<title>STEM Community Outreach Event</title>
+
+		<!-- various stylizations -->
+		
+		<!-- including bootstrap core css -->
+		<link rel="stylesheet" href="../../dist/css/bootstrap.min.css">
+
+		<!-- sidebar css for project -->
+		<link rel="stylesheet" href="../../sidebar.css">
+
+		<!-- custom styles for website -->
+		<link rel="stylesheet" href="../../styles.css">
+
+		<!-- custom styles for projects -->
+		<link rel="stylesheet" href="../styles.css">
+
+		<!-- custom styles for this page -->
+		<link rel="stylesheet" href="style.css">
+	</head>
+	
+	<body>
+		<!-- set up the navigation bar -->
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" role="navigation">
+
+			<!-- robro brand -->
+			<a class="navbar-brand" href="#">robro</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<!-- menu items -->
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#">About me</a>
+						</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="cv/cv.html">CV</a>
+					</li>
+
+					<!-- add java script for dropdown menu -->
+					<li class="nav-item dropdown">
+						
+						<a class="nav-link dropdown-toggle" href="#" id="navbar01" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Education</a>
+
+						<div class="dropdown-menu" aria-labelledby="navbar01">
+
+							<a class="dropdown-item" href="#">Master's of Science in Mechanical Engineering</a>
+							<a class="dropdown-item" href="#">Bachelor's of Science in Mechanical Engineering</a>
+							<a class="dropdown-item" href="#">Bachelor's of Science in Chemistry</a>
+
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbar01" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Experience</a>
+
+						<div class="dropdown-menu" aria-labelledby="navbar01">
+
+							<a class="dropdown-item" href="#">Professional</a>
+
+							<a class="dropdown-item" href="#">Academic</a>
+
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle active" href="#" id="navbar01" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
+
+						<div class="dropdown-menu" aria-labelledby="navbar01">
+
+							<a class="dropdown-item" href="#">Completed</a>
+
+							<a class="dropdown-item" href="#">Current</a>
+							<a class="dropdown-item" href="#">On Going</a>
+							<a class="dropdown-item" href="#">Defunct</a>
+
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbar01" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Research</a>
+
+						<div class="dropdown-menu" aria-labelledby="navbar01">
+
+							<a class="dropdown-item" href="#">Academic</a>
+							<a class="dropdown-item" href="#">Other</a>
+
+						</div>
+					</li>
+				</ul>
+
+				<!-- contact button -->
+				<button class="btn btn-outline-success btn-bg my-2" type="submit">Contact me</button>
+			</div>
+		</nav> <!-- top navbar -->
+
+		<!-- set up the main content -->
+		<div class="container-fluid" id="main-content">
+			<div class="row">
+				
+				<!-- left sidebar with project sitemap -->
+				<nav class="col-md-3 col-lg-2 d-none d-md-block sidebar bg-light" role="navigation">
+					<div class="sidebar-sticky">
+						<ul class="nav flex-column">
+							<li class="nav-item active">
+								<a class="nav-link active" href="#"><h3>Robotics Projects</h3></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" href="#">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" href="#">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" href="#">Home</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				
+				<!-- right sidebar for page map -->
+				<div class="d-none d-xl-block col-xl-2 page-map bg-light sticky-top" role="navigation">
+					<ul>
+						<li class="project-chapter">
+							<a href="#Intro">Introduction</a>
+						</li>
+						<ul>
+							<li class="project-chapter-section"><a href="#">Introduction to Dynamic Programming</a></li>
+							<li class="project-chapter-section"><a href="#">Example: Man Biking to Work</a></li>
+							<li class="project-chapter-section"><a href="#">The Rowdy Runner</a></li>
+						</ul>
+						<li class="project-chapter">
+							<a href="#Approach">Approach</a>
+						</li>
+						<ul>
+							<li class="project-chapter-section"><a href="#">Generating the Cost Network</a></li>
+							<li class="project-chapter-section"><a href="#">Generating the Connection Network</a></li>
+							<li class="project-chapter-section"><a href="#">Evaluating the Cost and Connection Network</a></li>
+						</ul>
+						<li class="project-chapter">
+							<a href="#Application">Application</a>
+						</li>
+						<ul>
+							<li class="project-chapter-section"><a href="#">Pendulum Upswing</a></li>
+							<li class="project-chapter-section"><a href="#">Rowdy: the Rimless Wheel Robot</a></li>
+						</ul>
+						<li class="project-chapter">
+							<a href="#Results">Results</a>
+						</li>
+						<ul>
+							<li class="project-chapter-section"><a href="#">Pendulum Upswing</a></li>
+							<li class="project-chapter-section"><a href="#">Rowdy: the Rimless Wheel Robot</a></li>
+						</ul>
+						<li class="project-chapter">
+							<a href="#Nextsteps">Next Steps</a>
+						</li>
+						<ul>
+							<li class="project-chapter-section"><a href="#">Reducing the Computational Time</a></li>
+							<li class="project-chapter-section"><a href="#">Altering the Rate of Decent</a></li>
+							<li class="project-chapter-section"><a href="#">Application to Real Systems</a></li>
+						</ul>
+						<li class="project-chapter">
+							<a href="#Conclusion">Conclusion</a>
+						</li>
+					</ul>
+				</div>
+
+				<!-- main content of the page -->
+				<main class="col-lg-8 col-md-9 ml-sm-auto content" role="main">
+					<div class="container-fluid bg-light" style="position: absolute; left: 0; top: 0; right: 0;">
+							<h1>hello world</h1>
+							<h1>hello world</h1>
+							<h1>hello world</h1>
+							<h1>hello world</h1>
+							<h1>hello world</h1>
+							<h1>hello world</h1>
+							<h1>hello world</h1>
+							<h1>hello world</h1>
+							<h1>hello world</h1>
+							<h1>hello world</h1>
+							<h1>hello world</h1>
+							<h1>hello world</h1>
+							<h1>hello world</h1>
+							<h1>hello world</h1>
+							<h1>hello world</h1>
+							<h1>hello world</h1>
+							<h1>hello world</h1>
+							<h1>hello world</h1>
+							<h1>hello world</h1>
+							<h1>hello world</h1>
+							<h1>hello world</h1>
+							<a href="#">Top of Page</a>
+					</div>
+				</main>
+			</div>
+		</div> <!-- div main content container fluid-->
+
+		<!-- scripts not yet secure -->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script>window.jQuery || document.write('<script src="../../jquery/dist/jquery.min.js"><\/script>')</script>
+		<script src="../../dist/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>

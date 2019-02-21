@@ -1,22 +1,12 @@
 :root {
-	--main-bg-color: #282728;
+	--main-bg-color: #f8f9fa;;
 }
 
 body {
 	background-color: var(--main-bg-color);
 }
 
-.bg-purple {
-	background-color: #460046;
-}
 
-
-ul.page-map li {
-}
-
-ul.page-map ul li{
-	margin: .5em 0;
-}
 
 /* ul.page-map ul {
 	list-style: none;
@@ -27,21 +17,5 @@ ul.page-map ul li{
 	list-style: none;
 	padding-left: 0;
 } */
-div#main-content {
-	margin-top: 63px;
-}
-
-nav#sidebar {
-	padding-top: 15px;
-	padding-bottom: 30px;
-}
-
-nav#sidebar h3#project-title {
-	color: azure;
-}
-
-#nav-item:hover {
-
-}
 
 /* sidebar specific stylization */
