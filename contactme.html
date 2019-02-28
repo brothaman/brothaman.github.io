@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Contact Robert Brothers</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- including bootstrap core css -->
+		<link rel="stylesheet" href="dist/css/bootstrap.min.css">
+
+
+		<!-- custom styles for this site -->
+		<link rel="stylesheet" href="styles.css">
+
+		<!-- custom styles for this page -->
+		<link rel="stylesheet" href="contactmestyle.css">
+
+	</head>
+	<body>
+		
+		<!-- set up the navigation bar -->
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+
+			<!-- robro brand -->
+			<a class="navbar-brand" href="#">robro</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<!-- menu items -->
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#">About me</a>
+						</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="cv/cv.html">CV</a>
+					</li>
+
+					<!-- add java script for dropdown menu -->
+					<li class="nav-item dropdown">
+						
+						<a class="nav-link dropdown-toggle" href="#" id="navbar01" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Education</a>
+
+						<div class="dropdown-menu" aria-labelledby="navbar01">
+
+							<a class="dropdown-item" href="#">Master's of Science in Mechanical Engineering</a>
+							<a class="dropdown-item" href="#">Bachelor's of Science in Mechanical Engineering</a>
+							<a class="dropdown-item" href="#">Bachelor's of Science in Chemistry</a>
+
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbar01" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Experience</a>
+
+						<div class="dropdown-menu" aria-labelledby="navbar01">
+
+							<a class="dropdown-item" href="#">Professional</a>
+
+							<a class="dropdown-item" href="#">Academic</a>
+
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbar01" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
+
+						<div class="dropdown-menu" aria-labelledby="navbar01">
+
+							<a class="dropdown-item" href="#">Completed</a>
+
+							<a class="dropdown-item" href="#">Current</a>
+							<a class="dropdown-item" href="#">On Going</a>
+							<a class="dropdown-item" href="#">Defunct</a>
+
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbar01" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Research</a>
+
+						<div class="dropdown-menu" aria-labelledby="navbar01">
+
+							<a class="dropdown-item" href="#">Academic</a>
+							<a class="dropdown-item" href="#">Other</a>
+
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+				
+		</main>
+		
+			<div class="col-md-10 mx-md-auto" id="main-content">
+				<form>
+					<div class="row" id="name-entry">
+						<label class="col-12">What's your name?</label>
+						<div class="clearfix"></div>
+						<div class="col-6">
+							<input type="text" class="form-control" placeholder="First name">
+						</div>
+						<div class="col-6">
+							<input type="text" class="form-control" placeholder="Last name">
+						</div>
+					</div>
+					<div class="form-group" id="email-entry">
+						<label for="exampleFormControlInput1">What's your email?</label>
+						<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+					</div>
+					<div class="form-group" id="subject-entry">
+						<label for="exampleFormControlSelect1">Whats up?</label>
+						<select class="form-control" id="exampleFormControlSelect1">
+						<option>Engineering Job Opportunity</option>
+						<option>Collaboration Opportunity</option>
+						<option>Web Developer Needed!</option>
+						<option>Other</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="exampleFormControlTextarea1">Tell me more...</label>
+						<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+					</div>
+				</form>
+			</div>
+		
+		<!-- scripts not yet secure -->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script>window.jQuery || document.write('<script src="jquery/dist/jquery.min.js"><\/script>')</script>
+		<script src="dist/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
+
