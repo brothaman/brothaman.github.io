@@ -1,7 +1,48 @@
+body {
+	background-image: url("media/background_contactme/background_contactme.001.jpeg")
+}
 #main-content {
 	padding-top: 6rem;
 }
 
 form {
-	margin-top: 50px
+	margin-top: 50px;
+	padding-top: 50px;
+}
+
+.form-control {
+	background: transparent;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid grey;
+	font-size: 18px;
+	margin-bottom: 16px;
+	border-radius: 0;
+}
+input {
+	height: 45px;
+}
+
+form .submit {
+	background: transparent;
+	border: 1px solid #f8f9fa;
+	color: #f8f9fa;
+	height: 50px;
+	margin-top: 20px;
+	border-radius: 5px;
+}
+form .submit:hover {
+	background-color: green;
+}
+form .submit:active {
+	background-color: #f8f9fa;
+	color: grey;
+}
+.contact-tile h1 {
+	color: azure;
+	font-weight: bold;
+	padding-bottom: 20px;
+}
+.contact-tile h2 {
+	color: azure;
 }
