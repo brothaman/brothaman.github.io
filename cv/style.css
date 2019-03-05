@@ -10,11 +10,11 @@ ul#skills {
 	text-align: center;
 }
 
-a:link {
+a:link:not(.contactme-btn) {
 	color: grey;
 }
 
-a:visited {
+a:visited:not(.contactme-btn) {
 	color: grey;
 }
 

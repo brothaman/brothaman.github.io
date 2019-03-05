@@ -61,6 +61,19 @@ body {
 	padding-top: 1rem!important;
 } */
 
+.contactme-btn {
+	color: #ECEBEB;
+	background-color: transparent;
+	border-color: #ECEBEB;
+}
+.contactme-btn:hover {
+	color: #ECEBEB;
+	background-color: green;
+}
+.contactme-btn:active {
+	background-color: #f8f9fa;
+	color: black;
+}
 .btn-outline-success {
 	color: #ECEBEB;
 	border-color: #ECEBEB;
