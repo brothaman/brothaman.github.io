@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Robert Brothers</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- including bootstrap core css -->
+		<link rel="stylesheet" href="../dist/css/bootstrap.min.css">
+
+
+		<!-- custom styles for this site -->
+		<link rel="stylesheet" href="../styles.css">
+
+		<!-- custom styles for this page -->
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		
+		<!-- set up the navigation bar -->
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+
+			<!-- robro brand -->
+			<a class="navbar-brand" href="../index.html">robro</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<!-- menu items -->
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#">About me</a>
+					</li>
+
+					<li class="nav-item active">
+						<a class="nav-link" href="#TopOfPage">CV</a>
+						<span class="sr-only">(current)</span>
+					</li>
+
+					<!-- add java script for dropdown menu -->
+					<li class="nav-item dropdown">
+						
+						<a class="nav-link dropdown-toggle" href="#" id="navbar01" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Education</a>
+
+						<div class="dropdown-menu" aria-labelledby="navbar01">
+
+							<a class="dropdown-item" href="#">Master's of Science in Mechanical Engineering</a>
+							<a class="dropdown-item" href="#">Bachelor's of Science in Mechanical Engineering</a>
+							<a class="dropdown-item" href="#">Bachelor's of Science in Chemistry</a>
+
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbar01" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Experience</a>
+
+						<div class="dropdown-menu" aria-labelledby="navbar01">
+
+							<a class="dropdown-item" href="#">Professional</a>
+
+							<a class="dropdown-item" href="#">Academic</a>
+
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbar01" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
+
+						<div class="dropdown-menu" aria-labelledby="navbar01">
+
+							<a class="dropdown-item" href="#">Completed</a>
+
+							<a class="dropdown-item" href="#">Current</a>
+							<a class="dropdown-item" href="#">On Going</a>
+							<a class="dropdown-item" href="#">Defunct</a>
+
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbar01" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Research</a>
+
+						<div class="dropdown-menu" aria-labelledby="navbar01">
+
+							<a class="dropdown-item" href="#">Academic</a>
+							<a class="dropdown-item" href="#">Other</a>
+
+						</div>
+					</li>
+				</ul>
+
+				<!-- contact button -->
+				<!-- contact button -->
+				<a href="../contactme.html" class="btn contactme-btn" role="button">Contact me</a>
+			</div>
+		</nav>
+
+        <main role="main">
+            <!-- Display PDF of cv -->
+            <div class="fullscreen mt-5" id="myCV">
+                <object data="resume.pdf" type="application/pdf" width="100%" height="100%"> 
+                    <p>It appears you don't have a PDF plugin for this browser.
+                    No biggie... you can <a href="resume.pdf">click here to
+                    download the PDF file.</a></p>  
+                </object>
+            </div>
+        </main>
+
+		<!-- set up the footer -->
+		<footer class="footer mt-auto py-3 bg-dark" style="max-width: 100%">
+			<div class="container">
+				<div class="row reverse">
+					<div class="col-3">
+						<a href="#myCV">Back to Top</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- scripts not yet secure -->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script>window.jQuery || document.write('<script src="../jquery/dist/jquery.min.js"><\/script>')</script>
+		<script src="../dist/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
+
